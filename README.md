@@ -1,16 +1,29 @@
 #### A package for the Taromaru API.
 
 
-##### Image Example:
+##### Image Example (no async):
 
 ```py
-    from taromaru import taromaruInit
+    from taromaru import taromaru
 
-    taromaru = taromaruInit("YOUR API KEY HERE")
+    taromaru = taromaru("YOUR API KEY HERE")
 
     results = taromaru.image(type="kanna")
 
     print(results)
 ```
 
-[Temp API Location](https://doggo-clicker.000webhostapp.com)
+##### Image Example (async):
+
+```py
+    from taromaru import taromaruasync
+    import asyncio
+
+    taromaru = taromaruasync("YOUR API KEY HERE")
+
+    results = asyncio.get_event_loop().run_until_complete(taromaru.image(type="kanna"))
+
+    print(results)
+```
+
+[API Location](https://taromaruapi.cu.ma)

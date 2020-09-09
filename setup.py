@@ -5,14 +5,14 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="Taromaru",
-    version="0.0.2",
+    version="0.0.3",
     author="Doggotaco",
     author_email="no@no.no",
     description="A package to use my API with Python!",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/DoggoTaco/taromaru",
-    install_requires=["requests"],
+    url="https://github.com/Taromaruu/taromaru",
+    install_requires=["requests", "aiohttp"],
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
